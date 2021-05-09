@@ -8,6 +8,7 @@ import Home from './Components/Home/Home';
 import Auth from './Components/Auth/Auth';
 import CreatePost from './Components/CreatePost/CreatePost';
 import Top3 from './Components/Posts/Top3/Top3';
+import SortedPosts from './Components/Posts/SortedPosts/SortedPosts';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/admin/login" component={() => <Auth isAdmin={true} />} exact />
           <Route path="/posts/create" component={CreatePost} exact />
           <Route path="/posts/top3" component={Top3} exact />
+          <Route path="/posts/sort" component={SortedPosts} exact />
         </Switch>
       </Container>
     </Router>
